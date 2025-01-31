@@ -1,135 +1,116 @@
 <html>
+
 <head>
-    <title>Login Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
     <style>
         body {
-            background-color: #5865F2;
-            font-family: 'Arial', sans-serif;
-            color: #fff;
+            background-color: #f0f0f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
+            margin: 0;
+        }
+
+        .signup-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 1200px;
+            background-color: white;
             padding: 20px;
-        }
-        .text-container {
-            flex: 1;
-            padding: 20px;
-        }
-        .text-container h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .login-container {
-            flex: 1;
-            max-width: 400px;
-            padding: 20px;
-            background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            color: #000;
         }
-        .login-container h2 {
-            text-align: center;
+
+        .signup-form {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .signup-form h3 {
             margin-bottom: 20px;
         }
-        .btn-social {
+
+        .signup-form .form-control {
+            margin-bottom: 10px;
+        }
+
+        .signup-form .btn-primary {
             width: 100%;
-            margin-bottom: 10px;
         }
-        .btn-social i {
-            margin-right: 8px;
-        }
-        .divider {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            margin: 20px 0;
-        }
-        .divider::before, .divider::after {
-            content: '';
-            flex: 1;
-            border-bottom: 1px solid #ddd;
-        }
-        .divider::before {
-            margin-right: .25em;
-        }
-        .divider::after {
-            margin-left: .25em;
-        }
-        .form-control {
-            margin-bottom: 10px;
-        }
-        .forgot-password {
+
+        .signup-form .forgot-password {
             text-align: right;
             display: block;
             margin-bottom: 10px;
         }
-        .login-btn {
-            width: 100%;
-            background-color: #5865F2;
-            color: #fff;
-        }
-        .signup-link {
+
+        .signup-form .signup {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 10px;
         }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .text-container {
-                text-align: center;
-                margin-bottom: 20px;
-            }
+
+        .image-container {
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="text-container">
-            <h1>Signup Form >>></h1>
+    <div class="signup-container">
+        <div class="image-container">
+            <img alt="Person working on a laptop with documents on a wooden table" height="300"
+                src="https://storage.googleapis.com/a1aa/image/AGTBEjV6Cx-4-2Jk96QuTuiI3yFu-G-6XizFU3r4DCw.jpg"
+                width="400" />
         </div>
-        <div class="login-container">
-            <h2>Sign up with</h2>
-            <button class="btn btn-outline-dark btn-social"><i class="fab fa-google"></i> Google</button>
-            <button class="btn btn-outline-dark btn-social"><i class="fab fa-apple"></i> Apple</button>
-            <div class="divider">or</div>
+        <div class="signup-form">
+            <h3>
+                Sign up
+            </h3>
             <form>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email address">
+                    <label class="form-label" for="email">
+                        Email
+                    </label>
+                    <input class="form-control" id="email" placeholder="Enter email address" type="email" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="password">
+                        Name
+                    </label>
+                    <input class="form-control" id="password" placeholder="Enter Your Name" type="text" />
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    <label class="form-label" for="password">
+                        Password
+                    </label>
+                    <input class="form-control" id="password" placeholder="Enter password" type="password" />
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Re-Enter Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Re-Enter password">
-                    <a href="#" class="forgot-password">Get OTP</a>
+                    <label class="form-label" for="password">
+                        Re-enter Password
+                    </label>
+                    <input class="form-control" id="password" placeholder="Re-enter password" type="password" />
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">OTP</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter OTP">
+                <button class="btn btn-primary" type="submit">
+                    SIGN UP
+                </button>
+                <div class="signup">
+                    Already have an account?
+                    <a href="#">
+                        Login
+                    </a>
                 </div>
-                <button type="submit" class="btn login-btn">SIGN UP</button>
             </form>
-            <div class="signup-link">
-                Already have an account? <a href="login.html" target="_blank">Login</a>
-            </div>
         </div>
     </div>
 </body>
+
 </html>

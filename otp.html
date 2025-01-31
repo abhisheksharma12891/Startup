@@ -13,7 +13,7 @@
             margin: 0;
         }
 
-        .login-container {
+        .otp-container {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -23,30 +23,30 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .login-form {
+        .otp-form {
             max-width: 400px;
             width: 100%;
         }
 
-        .login-form h3 {
+        .otp-form h3 {
             margin-bottom: 20px;
         }
 
-        .login-form .form-control {
+        .otp-form .form-control {
             margin-bottom: 10px;
         }
 
-        .login-form .btn-primary {
+        .otp-form .btn-primary {
             width: 100%;
         }
 
-        .login-form .forgot-password {
+        .otp-form .forgot-password {
             text-align: right;
             display: block;
             margin-bottom: 10px;
         }
 
-        .login-form .signup {
+        .otp-form .signup {
             text-align: center;
             margin-top: 10px;
         }
@@ -63,41 +63,31 @@
 </head>
 
 <body>
-    <div class="login-container">
+    <div class="otp-container">
         <div class="image-container">
             <img alt="Person working on a laptop with documents on a wooden table" height="300"
                 src="https://storage.googleapis.com/a1aa/image/AGTBEjV6Cx-4-2Jk96QuTuiI3yFu-G-6XizFU3r4DCw.jpg"
                 width="400" />
         </div>
-        <div class="login-form">
+        <div class="otp-form">
             <h3>
-                Log in
+                OTP
             </h3>
             <form>
-                <div class="mb-3">
-                    <label class="form-label" for="email">
-                        Email
-                    </label>
-                    <input class="form-control" id="email" placeholder="Enter email address" type="email" />
-                </div>
+                
                 <div class="mb-3">
                     <label class="form-label" for="password">
-                        Password
+                        OTP
                     </label>
-                    <input class="form-control" id="password" placeholder="Enter your password" type="password" />
+                    <input class="form-control" id="password" placeholder="Enter OTP from e-mail" type="password" />
                 </div>
                 <a class="forgot-password" href="#">
-                    Forgot Password?
+                    Send Again
                 </a>
                 <button class="btn btn-primary" type="submit">
-                    LOG IN
+                    Submit OTP
                 </button>
-                <div class="signup">
-                    Don't have an account?
-                    <a href="#">
-                        Signup
-                    </a>
-                </div>
+                
             </form>
         </div>
     </div>
