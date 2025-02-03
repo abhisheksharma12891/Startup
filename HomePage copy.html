@@ -1,0 +1,292 @@
+<html>
+
+<head>
+    <title>TaxSphere Solutions</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: hsl(240, 20%, 95%);
+            color: #333333;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .badge {
+            background-color: #e0f7fa;
+            color: #00796b;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        .main-heading {
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .sub-heading {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            border: none;
+            text-align: center;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+            margin-top: 20;
+            align-self: center;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: hsl(125, 50%, 50%);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: green !important;
+        }
+
+        .nav-link {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            transition: color 0.5s, transform 0.5s;
+        }
+
+        .nav-link i {
+            margin-left: 5px;
+            transition: transform 0.5s;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 675px;
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .nav-link:hover .dropdown-menu {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .nav-link:hover i {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .dropdown-item {
+            padding: 5px 0;
+            display: block;
+        }
+
+        .dropdown-item-bold {
+            font-weight: bold;
+        }
+
+        .dropdown-container {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+        }
+
+        .dropdown-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .dropdown-section:last-child {
+            margin-right: 0;
+        }
+
+        .video-container {
+            margin-top: 5rem;
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">TaxSphere Solutions</a>
+            <div class="d-flex justify-content-center">
+                <div class="nav-link d-inline-block">
+                    Products
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-container">
+                            <div class="dropdown-section">
+                                <div class="dropdown-header"><b>INDIVIDUAL PRODUCTS</b></div>
+                                <a class="dropdown-item" href="#">GST</a>
+                                <a class="dropdown-item" href="#">Account Payable</a>
+                                <a class="dropdown-item" href="#">Vendor Management</a>
+                                <a class="dropdown-item" href="#">MaxITC</a>
+                                <a class="dropdown-item" href="#">E-Invoice & E-Way Bill</a>
+                                <a class="dropdown-item" href="#">TDS</a>
+                                <a class="dropdown-item" href="#">Invoice Discounting</a>
+                                <a class="dropdown-item" href="#">Financing</a>
+                                <a class="dropdown-item" href="#">CimplyFive</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <div class="dropdown-header mt-3"><b>PRODUCT SUITES</b></div>
+                                <a class="dropdown-item" href="#">Clear Finance Cloud</a>
+                                <a class="dropdown-item" href="#">Clear Compliance Cloud</a>
+                                <a class="dropdown-item" href="#">Clear Supply Chain Cloud</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <div class="dropdown-header mt-3"><b>CONSUMER PRODUCTS</b></div>
+                                <a class="dropdown-item" href="#">ITR Filling</a>
+                                <a class="dropdown-item" href="#">Tax Consultant Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-link d-inline-block">
+                    Resources
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-container">
+                            <div class="dropdown-section">
+                                <div class="dropdown-header"><b>READ</b></div>
+                                <a class="dropdown-item" href="#">Case Studies</a>
+                                <a class="dropdown-item" href="#">Newsletter</a>
+                                <a class="dropdown-item" href="#">Opinion Notes</a>
+                                <a class="dropdown-item" href="#">ClearLearn</a>
+                                <a class="dropdown-item" href="#">Product Guides</a>
+                                <a class="dropdown-item" href="#">Newsroom</a>
+                                <a class="dropdown-item" href="#">Blog</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <div class="dropdown-header mt-3"><b>WATCH</b></div>
+                                <a class="dropdown-item" href="#">Webinars</a>
+                                <a class="dropdown-item" href="#">Product Guides-Videos</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <div class="dropdown-header mt-3"><b>ENGAGE</b></div>
+                                <a class="dropdown-item" href="#">Event</a>
+                                <a class="dropdown-item" href="#">FAQs</a>
+                                <a class="dropdown-item" href="#">Help Center (Product Support)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-link d-inline-block">
+                    Company
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item dropdown-item-bold" href="#">Support</a>
+                        <a class="dropdown-item dropdown-item-bold" href="#">About Us</a>
+                        <a class="dropdown-item dropdown-item-bold" href="#">Careers</a>
+                        <a class="dropdown-item dropdown-item-bold" href="#">Media & Press</a>
+                        <a class="dropdown-item dropdown-item-bold" href="#">Trust & Safety</a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="btn btn-primary" href="#">Get Started</a>
+        </div>
+    </nav>
+    <div class="container text-center">
+        <div class="badge mt-4">Recognized as the Top Innovator in Fintech Data Solutions</div>
+        <h1 class="main-heading">Save money, Save time</h1>
+        <p class="sub-heading">India's largest tax and financial services software platform</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img alt="Icon representing MaxITC" class="card-img-top" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/pQe7er-1mUTUUXO26rcMErIe4JDpLxa5dAIYjzWXpus.jpg"
+                        width="50" />
+                    <div class="card-body">
+                        <h5 class="card-title">MaxITC</h5>
+                        <p class="card-text">Increase Accuracy, Efficiency, Productivity</p>
+                        <a class="btn btn-primary" href="#">See product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img alt="Icon representing Enterprise" class="card-img-top" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/-G2H9ckq4nerZ-ljA7ALovi4vE3ilcCVr_4VR2Dy3UI.jpg"
+                        width="50" />
+                    <div class="card-body">
+                        <h5 class="card-title">Enterprise</h5>
+                        <p class="card-text">GST, E-Invoicing, Secretarial compliance &amp; more</p>
+                        <a class="btn btn-primary" href="#">Explore more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img alt="Icon representing Calculate Tax Liability" class="card-img-top" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/jdKuJYVlX6AiSEIEvhPXNfHqB54rUi0LAnECyZjGo2E.jpg"
+                        width="50" />
+                    <div class="card-body">
+                        <h5 class="card-title">Calculate Tax Liability</h5>
+                        <p class="card-text">Know your Tax liability as per the latest budget 2025 updates.</p>
+                        <a class="btn btn-primary" href="#">Calculate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <h2>Introduction Video</h2>
+            <video controls>
+                <source src="your-video-url.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</body>
+
+</html>

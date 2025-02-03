@@ -9,8 +9,6 @@
    body {
             font-family: 'Arial', sans-serif;
             background-color: hsl(240, 20%, 95%);
-
-
             color: #333333;
         }
         .navbar-brand {
@@ -107,6 +105,17 @@
         .dropdown-item-bold {
             font-weight: bold;
         }
+        /* Added styles for video */
+        .video-container {
+            margin-top: 5rem;
+            text-align: center;
+        }
+        .video-container video {
+            width: 80%;
+            height: auto;
+            border-radius: 15px; /* Adjust the value for more or less curvature */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow effect */
+        }
   </style>
  </head>
  <body>
@@ -161,7 +170,7 @@
         Clear Compliance Cloud
        </a>
        <a class="dropdown-item" href="#">
-        Clear SUpply Chain Cloud
+        Clear Supply Chain Cloud
        </a>
        
        <div class="dropdown-header mt-3">
@@ -234,27 +243,17 @@
       Company
       <i class="fas fa-chevron-down"></i>
       <div class="dropdown-menu">
-       <a class="dropdown-item dropdown-item-bold" href="#">
-        Support
-       </a>
-       <a class="dropdown-item dropdown-item-bold" href="#">
-        About Us
-       </a>
-       <a class="dropdown-item dropdown-item-bold" href="#">
-        Careers
-       </a>
-       <a class="dropdown-item dropdown-item-bold" href="#">
-        Media & Press
-       </a>
-       <a class="dropdown-item dropdown-item-bold" href="#">
-        Trust & Safety
-       </a>
+       <a class="dropdown-item dropdown-item-bold" href="#">Support</a>
+       <a class="dropdown-item dropdown-item-bold" href="#">About Us</a>
+       <a class="dropdown-item dropdown-item-bold" href="#">Careers</a>
+       <a class="dropdown-item dropdown-item-bold" href="#">Media & Press</a>
+       <a class="dropdown-item dropdown-item-bold" href="#">Trust & Safety</a>
       </div>
      </div>
     </div>
     <div>
      <a class="btn btn-primary" href="#">
-      Login/Signup
+      Get Started
      </a>
     </div>
    </div>
@@ -318,6 +317,12 @@
       </div>
      </div>
     </div>
+   </div>
+   <div class="video-container">
+     <video controls>
+       <source src="your-video-url.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
    </div>
   </div>
  </body>
